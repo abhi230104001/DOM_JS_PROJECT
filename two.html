@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic of DOM| lecture no 33 </title>
+</head>
+<body style="background-color:#212121;color:#fff;">
+    <div class="parent">
+        <div class="day"> monday </div>
+        <div class="day"> tuesday </div>
+        <div class="day"> wednesday </div>
+        <div class="day"> thursday </div>
+    </div>
+
+
+    
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1].innerHTML);
+    for(let i =0;i<parent.children.lenght;i++){
+        console.log(parent.children[i].innerHTML);
+    }
+ const dayone = document.querySelector('.day');
+ console.log(dayone);
+ console.log(dayone.parentElement);
+ console.log(dayone.nextElementSibiling);
+ console.log("NODES: ", parent.childNodes);// give nodes of parent inthis nodes are not only children but space and nextline and enter also consider as nodes
+</script>
+</html>

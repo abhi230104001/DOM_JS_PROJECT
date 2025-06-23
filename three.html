@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating element in dom topic </title>
+</head>
+<body>
+ 
+</body>
+<Script>
+    const div = document.createElement('div');
+    console.log(div);
+    div.className ="main";
+    div.id = Math.round(Math.random() * 10 + 1);
+    // classname and id are default attribute present in created element
+    // to add other attribute and user define attribute use syntax of line 18;
+    div.setAttribute("title","genreted title");
+    div.style.backgroundcolor = "black";
+    // for writing text in created div there is two method
+    // method 1
+    // div.innerText ="chai aur code";
+
+
+// method  23 to 24
+const addtext = document.createTextNode("chai aur code");
+div.appendChild(addtext);
+// to show the content of created element we have to push in to the body of document
+document.body.appendChild(div);
+</Script>
+</html>
